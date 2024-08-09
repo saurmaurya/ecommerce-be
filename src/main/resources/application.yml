@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ecommerce
+  profiles:
+    active: dev
+  datasource:
+    name: ecommercedb
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/ecommerce
+    username: root
+    password: Hot@12345
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+server:
+  port: 8085
